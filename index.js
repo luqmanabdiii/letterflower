@@ -12,3 +12,11 @@ heart.addEventListener('mouseleave', () => {
 onload = () =>{
         document.body.classList.remove("container");
 };
+
+function openLetter() {
+  envelope.classList.toggle('open');
+}
+
+// Tambah dukungan untuk click & touch
+heart.addEventListener('click', openLetter);
+heart.addEventListener('touchstart', openLetter);

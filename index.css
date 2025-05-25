@@ -144,6 +144,26 @@
   }
 
 
+/* Fix surat layout */
+.letter {
+  transition: transform 0.5s ease;
+  transform-origin: top center;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .envelope-wrapper {
+    transform: scale(0.8); /* perkecil isi */
+  }
+
+  .flower-button {
+    font-size: 14px;
+    padding: 8px 16px;
+    white-space: nowrap;
+  }
+}
+
+/* Tombol di bawah tengah */
 .flower-button-container {
   position: fixed;
   bottom: 20px;
@@ -162,7 +182,13 @@
   font-family: Arial, sans-serif;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   transition: background-color 0.3s ease;
+  display: inline-block;
 }
+
+.flower-button:hover {
+  background-color: #ff2e4b;
+}
+
 
 .flower-button:hover {
   background-color: #ff2e4b;
